@@ -2,11 +2,11 @@ import React from 'react'
 import {BsBasket} from "react-icons/bs"
 const Bottom1 = () => {
   return (
-    <div className='bottomClass'>
-      <ul>
-        <li><a href="#!"><BsBasket/></a></li>
+   
+      <ul className='bottomClass'>
+        <li><a href="#!"><BsBasket/><span>0</span> </a></li>
       </ul>
-    </div>
+  
   )
 }
 
