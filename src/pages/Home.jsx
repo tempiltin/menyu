@@ -1,39 +1,45 @@
 // import { useState } from 'react'
 import React from "react"
+import Bottom1 from '../Components/NavigationBottom/Bottom1';
+
+import { useState } from 'react';
 
 const Home = (props) => {
 
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [role, setRole] = useState("");
-  // const saveUser = () => {
-  //   console.log({ email, name, password, role });
-  //   alert({ email, name, password, role })
-  //   let data = { email, name, password, role }
-  //   fetch("https://stratappresturant.herokuapp.com/api/v1/organizatsions/user/create/",{
-  //     method:"POST",
-  //     headers:{
-  //       'Accept':'application/json',
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body:JSON.stringify(data)
-  //   }).then((result)=>{
-  //      console.warn("result" , result);
-  //   })
-  // }
-  return (
-    <div>
 
-      {/* <div>
-        <input type="text" value={name} onChange={(e) => { setName(e.target.value) }} name='name' placeholder='name' />
-        <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} name='email' placeholder='email' />
-        <input type="password" value={password} onChange={(e) => { setPassword(e.target.value) }} name='password' placeholder='password' />
-        <input type="text" value={role} onChange={(e) => { setRole(e.target.value) }} name='role' placeholder='role' />
-        <button type="submit" onClick={saveUser}>Submit</button>
-      </div> */}
-      
-    </div>
+  const [orderright, setOrderRight] = useState(false)
+  const orderClick = (e) => {
+    e.preventDefault();
+    if (orderright) {
+      setOrderRight(false);
+    } else {
+      setOrderRight(true);
+    }
+  };
+  const prev = (e)=>{
+    e.preventDefault();
+    if (orderright) {
+      setOrderRight(false);
+    } else {
+      setOrderRight(true);
+    }
+  }
+  return (
+    <header>
+
+     
+      <div className={orderright ? "orderRight mainorder " : "orderRightFalse mainorder"}>
+        <div className="mycontainer">
+        <h1>salom</h1>
+         
+          <div className="bottomFixed">
+            <button className="btnorder_primary">Tasdiqlash</button>
+            <button className="btnorder" onClick={prev}>Ortga</button>
+          </div>
+        </div>
+      </div>
+      <Bottom1 title={'korzina'} func={orderClick} />
+    </header>
   )
 }
 

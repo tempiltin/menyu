@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Bottom1 = () => {
+const Bottom1 = (props) => {
   return (
    
-      <button className='bottomClass'>
-        korzina
+      <button className='bottomClass' onClick={props.func}>
+        {props.title}
       </button>
   
   )
