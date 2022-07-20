@@ -40,6 +40,7 @@ body {
     z-index: 100;
     transition: 900ms;
     right: 0%;
+    z-index: 101000000000000000000000000;
 }
 
 .orderRightFalse {
@@ -48,7 +49,7 @@ body {
     min-height: 100%;
     background: #E5E5E5;
     position: fixed;
-    z-index: 101;
+    z-index: 101000000000000000000000000;
     right: -100%;
     transition: 900ms;
 }
