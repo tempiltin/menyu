@@ -53,7 +53,7 @@ const Product = () => {
                         <div className="category">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
-                                slidesPerView={3}
+                                slidesPerView={2}
                                 spaceBetween={30}
                                 pagination={{
                                     clickable: true,
@@ -78,10 +78,11 @@ const Product = () => {
 
                             </Swiper>
                         </div>
+                     
                         <div className="category">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
-                                slidesPerView={3}
+                                slidesPerView={2}
                                 spaceBetween={30}
                                 pagination={{
                                     clickable: true,
@@ -96,16 +97,21 @@ const Product = () => {
                                             <img src={img} alt="logo" />
                                              <h3>{name}</h3>
                                              <h4>{price}</h4>
+                                             <div className="butdiv">
+                                             <button>+</button>
+                                             <button>-</button>
+                                             </div>
                                         </SwiperSlide>
                                     ))
                                 }
 
                             </Swiper>
                         </div>
+                     
                         <div className="category">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
-                                slidesPerView={3}
+                                slidesPerView={2}
                                 spaceBetween={30}
                                 pagination={{
                                     clickable: true,
@@ -120,16 +126,21 @@ const Product = () => {
                                             <img src={img} alt="logo" />
                                              <h3>{name}</h3>
                                              <h4>{price}</h4>
+                                             <div className="butdiv">
+                                             <button>+</button>
+                                             <button>-</button>
+                                             </div>
                                         </SwiperSlide>
                                     ))
                                 }
 
                             </Swiper>
                         </div>
+                     
                         <div className="category">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
-                                slidesPerView={3}
+                                slidesPerView={2}
                                 spaceBetween={30}
                                 pagination={{
                                     clickable: true,
@@ -144,16 +155,21 @@ const Product = () => {
                                             <img src={img} alt="logo" />
                                              <h3>{name}</h3>
                                              <h4>{price}</h4>
+                                             <div className="butdiv">
+                                             <button>+</button>
+                                             <button>-</button>
+                                             </div>
                                         </SwiperSlide>
                                     ))
                                 }
 
                             </Swiper>
                         </div>
+                     
                         <div className="category">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
-                                slidesPerView={3}
+                                slidesPerView={2}
                                 spaceBetween={30}
                                 pagination={{
                                     clickable: true,
@@ -168,13 +184,104 @@ const Product = () => {
                                             <img src={img} alt="logo" />
                                              <h3>{name}</h3>
                                              <h4>{price}</h4>
+                                             <div className="butdiv">
+                                             <button>+</button>
+                                             <button>-</button>
+                                             </div>
                                         </SwiperSlide>
                                     ))
                                 }
 
                             </Swiper>
                         </div>
+                     
+                        <div className="category">
+                            <h2>Yengil Taomlar</h2>
+                            <Swiper
+                                slidesPerView={2}
+                                spaceBetween={30}
+                                pagination={{
+                                    clickable: true,
+                                }}
 
+                                className="mySwiper"
+                            >
+                                {
+                                    Data.map(({img , name , price ,id},index) => (
+
+                                        <SwiperSlide key={index}>
+                                            <img src={img} alt="logo" />
+                                             <h3>{name}</h3>
+                                             <h4>{price}</h4>
+                                             <div className="butdiv">
+                                             <button>+</button>
+                                             <button>-</button>
+                                             </div>
+                                        </SwiperSlide>
+                                    ))
+                                }
+
+                            </Swiper>
+                        </div>
+                     
+                        <div className="category">
+                            <h2>Yengil Taomlar</h2>
+                            <Swiper
+                                slidesPerView={2}
+                                spaceBetween={30}
+                                pagination={{
+                                    clickable: true,
+                                }}
+
+                                className="mySwiper"
+                            >
+                                {
+                                    Data.map(({img , name , price ,id},index) => (
+
+                                        <SwiperSlide key={index}>
+                                            <img src={img} alt="logo" />
+                                             <h3>{name}</h3>
+                                             <h4>{price}</h4>
+                                             <div className="butdiv">
+                                             <button>+</button>
+                                             <button>-</button>
+                                             </div>
+                                        </SwiperSlide>
+                                    ))
+                                }
+
+                            </Swiper>
+                        </div>
+                     
+                        <div className="category">
+                            <h2>Yengil Taomlar</h2>
+                            <Swiper
+                                slidesPerView={2}
+                                spaceBetween={30}
+                                pagination={{
+                                    clickable: true,
+                                }}
+
+                                className="mySwiper"
+                            >
+                                {
+                                    Data.map(({img , name , price ,id},index) => (
+
+                                        <SwiperSlide key={index}>
+                                            <img src={img} alt="logo" />
+                                             <h3>{name}</h3>
+                                             <h4>{price}</h4>
+                                             <div className="butdiv">
+                                             <button>+</button>
+                                             <button>-</button>
+                                             </div>
+                                        </SwiperSlide>
+                                    ))
+                                }
+
+                            </Swiper>
+                        </div>
+                     
                     </div>
                 </div>
             </div>
