@@ -24,6 +24,7 @@ body {
     transform: scale(0.99);
     transition: 900ms;
     border: none;
+    z-index: 10000000;
 }
 
 .bottomClass:active {
@@ -135,4 +136,14 @@ h1{
     height: auto;
     background: #E5E5E5;
     border-radius: 20px;
+    padding: 15px;
+}
+.category{
+
+    h2{
+        font-size: 20px;
+        padding: 10px;
+        color: #DF4E2B;
+        font-weight: bold;
+    }
 }
