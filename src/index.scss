@@ -37,9 +37,10 @@ body {
     min-height: 100%;
     background: #E5E5E5;
     position: fixed;
-    z-index: 100;
+
     transition: 900ms;
     right: 0%;
+    bottom: 0;
     z-index: 10100000000000000000;
 }
 
@@ -51,6 +52,7 @@ body {
     position: fixed;
     z-index: 101000000000000000000000000;
     right: -100%;
+    bottom: 0;
     transition: 900ms;
 }
 
