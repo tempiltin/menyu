@@ -50,7 +50,7 @@ const Product = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="card">
-                        <div className="category">
+                        <div className="category mt-5">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
                                 slidesPerView={2}
@@ -79,7 +79,7 @@ const Product = () => {
                             </Swiper>
                         </div>
                      
-                        <div className="category">
+                        <div className="category mt-5">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
                                 slidesPerView={2}
@@ -108,7 +108,7 @@ const Product = () => {
                             </Swiper>
                         </div>
                      
-                        <div className="category">
+                        <div className="category mt-5" >
                             <h2>Yengil Taomlar</h2>
                             <Swiper
                                 slidesPerView={2}
@@ -137,7 +137,7 @@ const Product = () => {
                             </Swiper>
                         </div>
                      
-                        <div className="category">
+                        <div className="category mt-5">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
                                 slidesPerView={2}
@@ -166,7 +166,7 @@ const Product = () => {
                             </Swiper>
                         </div>
                      
-                        <div className="category">
+                        <div className="category mt-5">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
                                 slidesPerView={2}
@@ -195,7 +195,7 @@ const Product = () => {
                             </Swiper>
                         </div>
                      
-                        <div className="category">
+                        <div className="category mt-5">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
                                 slidesPerView={2}
@@ -224,7 +224,7 @@ const Product = () => {
                             </Swiper>
                         </div>
                      
-                        <div className="category">
+                        <div className="category mt-5">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
                                 slidesPerView={2}
@@ -253,7 +253,7 @@ const Product = () => {
                             </Swiper>
                         </div>
                      
-                        <div className="category">
+                        <div className="category mt-5">
                             <h2>Yengil Taomlar</h2>
                             <Swiper
                                 slidesPerView={2}
