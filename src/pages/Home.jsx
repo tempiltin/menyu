@@ -3,6 +3,8 @@ import React from "react"
 import Bottom1 from '../Components/NavigationBottom/Bottom1';
 
 import { useState } from 'react';
+import Product from "../Components/Product/Product";
+import Number from "../Components/Number/Number";
 
 const Home = (props) => {
 
@@ -26,18 +28,16 @@ const Home = (props) => {
   }
   return (
     <header>
-
-     
       <div className={orderright ? "orderRight mainorder " : "orderRightFalse mainorder"}>
-        <div className="mycontainer">
-        <h1>salom</h1>
-         
+        <div className="container">
           <div className="bottomFixed">
             <button className="btnorder_primary">Tasdiqlash</button>
             <button className="btnorder" onClick={prev}>Ortga</button>
           </div>
         </div>
       </div>
+      <Number value={12}/>
+          <Product />
       <Bottom1 title={'korzina'} func={orderClick} />
     </header>
   )

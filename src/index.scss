@@ -31,20 +31,22 @@ body {
 }
 
 .orderRight {
-    position: fixed;
+   
     width: 100%;
     min-height: 100%;
     background: #E5E5E5;
+    position: fixed;
     z-index: 100;
     transition: 900ms;
     right: 0%;
 }
 
 .orderRightFalse {
-    position: fixed;
+    min-width: 100%;
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
     background: #E5E5E5;
+    position: fixed;
     z-index: 101;
     right: -100%;
     transition: 900ms;
@@ -55,7 +57,7 @@ button {
 }
 
 .mycontainer {
-    width: 80%;
+    width: 90%;
 
     margin: 0 auto;
 
@@ -72,9 +74,9 @@ button {
     .bottomFixed {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         position: absolute;
-        bottom: 3%;
+        bottom: 2%;
 
        
         .btnorder_primary {
@@ -86,6 +88,7 @@ button {
             padding: 15px 25px;
             transition: 900ms;
             border: none;
+            margin-right: 25%;
             
         }
 
@@ -93,7 +96,43 @@ button {
             padding: 15px 20px;
             border-radius: 10px;
             border: 2px solid #DF4E2B;
+            font-size: 18px;
+            color: #DF4E2B;
+            font-weight: bold;
         }
     }
 
+}
+
+
+
+// stol++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+.stolName{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background: #DF4E2B;
+
+
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    color:  #DF4E2B;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    background: #E5E5E5;
+    border-radius: 20px;
 }
