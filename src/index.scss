@@ -8,4 +8,21 @@
 body{
     position: relative;
 }
-
+.bottomClass{
+    position:fixed;
+    bottom: 2%;
+    left: 3%;
+    padding: 20px 40%;
+    background: #DF4E2B;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 500ms;
+    border: none;
+}
+.bottomClass:active{
+  transform: scale(1.1);
+}
