@@ -1,0 +1,42 @@
+import pizzaimg from '../images/food-sutherland-foodservice-12.png'
+
+export function getData () {
+    return[
+     {
+        title:"pizza",
+        price:45000,
+        image:pizzaimg,
+        id:1
+     },
+     {
+        title:"asdasd",
+        price:45000,
+        image:pizzaimg,
+        id:2
+     },
+     {
+        title:"pizza",
+        price:45000,
+        image:pizzaimg,
+        id:3
+     },
+     {
+        title:"asdasd",
+        price:45000,
+        image:pizzaimg,
+        id:4
+     },
+     {
+        title:"pizza",
+        price:45000,
+        image:pizzaimg,
+        id:5
+     },
+     {
+        title:"asdasd",
+        price:45000,
+        image:pizzaimg,
+        id:6
+     },
+    ]
+}

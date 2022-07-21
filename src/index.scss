@@ -5,6 +5,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #e0c521;
+}
 
 body {
     position: relative;
@@ -155,10 +158,121 @@ h1{
     justify-content: space-between;
 }
 
+
+
+
+// button =============================================================
+
+.btn{
+    padding: 0.6rem 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    width: 70px;
+    margin-left: 10px;
+    box-shadow: 1px -3px 52px -5px rgba(0,0,0,0.77);
+    cursor: pointer;
+}
+.btn.add{
+    background-color: var(--primary-color);
+
+}
+.btn.remove{
+    background-color: tomato;
+
+}
+
+.btn.checkout{
+    background-color: rgb(38, 121, 38);
+    width: 150px;
+    color: #fff;
+    font-size: 14px;
+}
+.btn:active{
+    transform: scale(.98);
+}
+
+.btn.btn.remove:hover{
+    background-color: rgb(209,83,61);
+}
+.btn.remove:active{
+    background-color: rgb(185,73,64);
+}
+.btn.checkout:hover{
+    background-color: rgb(41,141,41);
+}
+.btn.checkout:active{
+    background-color: rgb(30,93,41);
+}
+.apiclass{
+    h3{
+        font-size: 22px;
+        color: #DF4E2B;
+        padding: 10px 0;
+    }
+    .h4{
+        font-size: 18px;
+        font-weight: 900;
+        color: #dfb52b;
+        margin-left: 10px;
+    }
+}
+
+.image__container{
+    img{
+        width: 100%;
+    }
+}
+
+.cardt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+    height: 250px;
+    background: white;
+    padding: 0.5rem 0.3rem;
+    margin: 13px 10px;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.card__title {
+    font-weight: 400;
+    text-align: center;
+}
+
+.card__title .card__price {
+    font-weight: bold;
+
+}
+
+.image__container{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.image__container img {
+    width: 100%;
+    object-fit: cover;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card__price{
+    text-align: center;
+    display: inline-block;
+}
 .card__badge{
     position: absolute;
-    top: 30px;
-    right: 0;
+    top: 15px;
+    right: 0px;
     width: 40px;
     height: 40px;
     background-color: rgb(227,112,30);
@@ -176,30 +290,14 @@ h1{
     animation: scaleanimation 1s ease infinite;
     opacity: 0.8;
 }
+
+@keyframes scaleanimation {
+    to{
+        transform: translate(20px,-20px) scale(1.05);
+        opacity: 1;
+    }
+}
+
 .card__badge--hidden{
     display: none;
-}
-.btn{
-    padding: 0.6rem 0.8rem;
-    font-size: 1.2rem;
-    text-align: center;
-    border: 0;
-    outline: none;
-    border-radius: 10px;
-    width: 70px;
-    margin-left: 10px;
-    box-shadow: 1px -3px 52px -5px rgba(0,0,0,0.77);
-}
-.apiclass{
-    h3{
-        font-size: 22px;
-        color: #DF4E2B;
-        padding: 10px 0;
-    }
-    .h4{
-        font-size: 18px;
-        font-weight: 900;
-        color: #dfb52b;
-        margin-left: 10px;
-    }
 }
