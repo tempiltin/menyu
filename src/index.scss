@@ -92,20 +92,27 @@ button {
             font-size: 18px;
             color: white;
             font-weight: 900;
-            padding: 15px 25px;
+            padding: 15px 20px;
             transition: 900ms;
             border: none;
-            margin-right: 25%;
+            margin-right: 2%;
             
         }
 
         .btnorder {
-            padding: 15px 20px;
+            padding: 0.6rem 0.8rem;
+            font-size: 1.2rem;
+            text-align: center;
+            border: 0;
+            outline: none;
             border-radius: 10px;
-            border: 2px solid #DF4E2B;
-            font-size: 18px;
-            color: #DF4E2B;
-            font-weight: bold;
+            width: 80px;
+            margin-left: 10px;
+            box-shadow: 1px -3px 52px -5px rgba(0,0,0,0.77);
+            cursor: pointer;
+        }
+        .btnorder:nth-child(1) {
+          margin-right: 10%;
         }
     }
 
@@ -300,4 +307,17 @@ h1{
 
 .card__badge--hidden{
     display: none;
+}
+
+
+
+// cart ==================================================================
+
+.cart__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin: 5px 15px;
 }

@@ -5,6 +5,7 @@ import Bottom1 from '../Components/NavigationBottom/Bottom1';
 import Product from "../Components/Product/Product";
 import Number from "../Components/Number/Number";
 import Cart from '../Components/Cart/Cart';
+import Button from '../Components/Button/Button';
 
 const Home = (props) => {
 
@@ -27,14 +28,35 @@ const Home = (props) => {
     }
   }
 
-  const [cartItems,setCartItems] = useState([])
+  const [cartItems,setCartItems] = useState([]);
+
+  const onAdd = (food) => {
+    const exist = cartItems.find((x) => x.id === food.id)
+    if (exist) {
+      setCartItems(cartItems.map(x => x.id === food.id ? { ...exist,quantity: exist.quantity+1} : x))
+    }else{
+      setCartItems([...cartItems , {...food,quantity:1}])
+    }
+  }
+
+  const onRemove = (food) =>{
+    const exist = cartItems.find((x) => x.id === food.id);
+    if(exist.quantity === 1){
+      setCartItems(cartItems.filter(x=> x.id !== food.id))
+    }else{
+      setCartItems(cartItems.map(x=>
+         x.id === food.id ? {...exist,quantity: exist.quantity  -1} : x
+        ))
+    }
+  }
   return (
     <header>
       <div className={orderright ? "orderRight mainorder " : "orderRightFalse mainorder"}>
         <div className="container">
-          <Cart cartItems/>
+          <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
           <div className="bottomFixed">
-            <button className="btnorder_primary">Tasdiqlash</button>
+            {/* <Button className="btnorder_primary" onClick={onAdd}/> */}
+            <button className="btnorder" onClick={onRemove}>bekor..</button>
             <button className="btnorder" onClick={prev}>Ortga</button>
           </div>
         </div>
