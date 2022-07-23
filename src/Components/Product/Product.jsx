@@ -12,7 +12,7 @@ import "./swiper.css"
 const {getData} = require("../../db/db")
 
 const foods = getData();
-function Product () {
+function Product ({onAdd,onRemove}) {
 
     
 
@@ -27,7 +27,7 @@ function Product () {
                       
                         <div className="category mt-5">
                             <h2>Yengil Taomlar</h2>
-                            <Swiper  slidesPerView={1.5} spaceBetween={30}  pagination={{
+                            <Swiper  slidesPerView={2} spaceBetween={30}  pagination={{
                                     clickable: true,
                                 }} className="mySwiper"
                             >
@@ -35,7 +35,7 @@ function Product () {
                                     foods.map((food)=>{
                                         return (
                                             <SwiperSlide key={food.id}>
-                                                <Card food={food} />
+                                                <Card food={food} onAdd={onAdd} onRemove={onRemove}/>
                                             </SwiperSlide>
                                         )
                                     })

@@ -321,3 +321,25 @@ h1{
     margin-top: 12px;
     margin: 5px 15px;
 }
+
+// error page ============================================================================================================
+
+main{
+
+    width: 100%;
+    min-height: 100%;
+
+     .card{
+        padding-top: 45px;
+     }
+    .notfound{
+        width: 100%;
+        border-radius: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+}
