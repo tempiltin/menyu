@@ -9,5 +9,11 @@ restoran menyu
 <form>
  <select>
    <option>Fast food app</option>
+   <option>Fast food app</option>
+   <option>Fast food app</option>
+   <option>Fast food app</option>
+   <option>Fast food app</option>
+   <option>Fast food app</option>
+   <option>Fast food app</option>
  </select>
 </form>
