@@ -10,45 +10,48 @@ import { useEffect } from "react";
 // const { getData } = require("../../db/db");
 // const foods = getData();
 
-
 function Prod({ onAdd, onRemove }) {
+  const [data, setData] = useState([]);
 
+  useEffect(() => {
+    allFood();
+  }, []);
 
-    const [data, setData] = useState([]);
+  const urlApi =
+    "https://stratappresturant.herokuapp.com/api/v1/org/1/getHomeDetail/";
 
-    useEffect(() => {
-        allFood()
-    }, [])
-   
-     const urlApi = 'https://stratappresturant.herokuapp.com/api/v1/org/1/getHomeDetail/';
+  const allFood = async () => {
+    const response = await axios.get(`${urlApi}`);
+    const data = response.data;
+    setData(data);
+  };
 
-    const allFood = async () => {
-        const response = await axios.get(`${urlApi}`)
-        const data = response.data
-        setData(data)
-        console.log(data.category);
-    }
+  console.log(window.innerWidth);
 
-    return (
-        <div className='container'>
-            <h1>{data.organizatsion}</h1>
-            <div className="row">
-                <div className="col-12">
-                    <div className="card">
-                       
-
-                       {
-                        data.category.map((item , index)=>{
-                            return(
-                                <h1>{item.name}</h1>
-                            )
-                        })
-                       }
-                  
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="container">
+      <h1>{data.organizatsion}</h1>
+      <div className="row">
+        <div className="col-12">
+          <div className="card">
+            {data.category
+              ? data.category.map(
+                  (key, index) => console.log(key.organizatsion)
+                  //   <div className="data" key={index}>
+                  //     <h2>{key.name} </h2>
+                  //     {key.product.map((item, index2) => (
+                  //       <div className="products" key={index2}>
+                  //         <h5>{item.name}</h5>
+                  //       </div>
+                  //     ))}
+                  //     <hr />
+                  //   </div>
+                )
+              : ""}
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 export default Prod;
