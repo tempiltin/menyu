@@ -2,12 +2,28 @@ import { useState } from 'react'
 
 import Bottom1 from '../Components/NavigationBottom/Bottom1';
 
-import Product from "../Components/Product/Product";
+// import Product from "../Components/Product/Product";
 import Number from "../Components/Number/Number";
 import Cart from '../Components/Cart/Cart';
+import Prod from '../Components/Product/Prod';
 
 const Home = (props) => {
 
+
+  const cart = {
+    "order_id": null,
+    "table_num": 2,
+    "people_number":4,
+    "paymant":3,
+    "product":[
+      {
+        "product_id":1,
+        "product_amount_id":1,
+        "amount":2
+
+      }
+    ]
+  }
 
   const [orderright, setOrderRight] = useState(false)
   const orderClick = (e) => {
@@ -40,7 +56,10 @@ const Home = (props) => {
     } else {
         setCartItems([...cartItems, { ...food, quantity: 1 }]);
     }
+    console.log(food);
 }
+
+
 
 const onRemove = (food) => {
   const exist = cartItems.find((x) => x.id === food.id);
@@ -67,10 +86,11 @@ const onRemove = (food) => {
         </div>
       </div>
       <Number value={12}/>
-          <Product onAdd={onAdd} onRemove={onRemove}/>
+          {/* <Product onAdd={onAdd} onRemove={onRemove}/> */}
+          <Prod onAdd={onAdd} onRemove={onRemove}/>
       <Bottom1 title={'korzina'} func={orderClick} />
     </header>
   )
 }
 
-export default Home
+export default Home;

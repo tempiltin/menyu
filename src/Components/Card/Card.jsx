@@ -11,7 +11,7 @@ function Card({ food, onAdd, onRemove }) {
     setCount(count + 1);
 
     onAdd(food);
-    console.log(food);
+    // console.log(food);
   };
   const handleDecrement = () => {
     setCount(count - 1);

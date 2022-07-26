@@ -330,8 +330,9 @@ main{
     min-height: 100%;
 
      .card{
-        padding-top: 45px;
-     }
+       height: 100vh;
+      min-height: 100%;
+    }
     .notfound{
         width: 100%;
         border-radius: 20px;
@@ -341,5 +342,9 @@ main{
             width: 100%;
             border-radius: 20px;
         }
+    }
+    .pd0{
+        padding: 0;
+        margin: 0;
     }
 }
