@@ -10,20 +10,20 @@ import Prod from '../Components/Product/Prod';
 const Home = (props) => {
 
 
-  const cart = {
-    "order_id": null,
-    "table_num": 2,
-    "people_number":4,
-    "paymant":3,
-    "product":[
-      {
-        "product_id":1,
-        "product_amount_id":1,
-        "amount":2
+  // const cart = {
+  //   "order_id": null,
+  //   "table_num": 2,
+  //   "people_number":4,
+  //   "paymant":3,
+  //   "product":[
+  //     {
+  //       "product_id":1,
+  //       "product_amount_id":1,
+  //       "amount":2
 
-      }
-    ]
-  }
+  //     }
+  //   ]
+  // }
 
   const [orderright, setOrderRight] = useState(false)
   const orderClick = (e) => {
@@ -56,7 +56,7 @@ const Home = (props) => {
     } else {
         setCartItems([...cartItems, { ...food, quantity: 1 }]);
     }
-    console.log(food);
+    // console.log(food);
 }
 
 

@@ -244,6 +244,9 @@ h1{
     margin: 13px 10px;
     position: relative;
     border-radius: 5px;
+    .param{
+        text-align: center;
+    }
 
 }
 
@@ -346,5 +349,14 @@ main{
     .pd0{
         padding: 0;
         margin: 0;
+    }
+}
+.cartegory_name{
+    font-size: 22px;
+    color: #DF4E2B;
+    padding: 20px;
+    &::first-letter{
+        font-size: 26px;
+        font-weight: 900;
     }
 }
