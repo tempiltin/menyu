@@ -26,7 +26,7 @@ function Prod({ onAdd, onRemove }) {
         const response = await axios.get(`${urlApi}`)
         const data = response.data
         setData(data)
-        console.log(data);
+        console.log(data.category);
     }
 
     return (
@@ -35,17 +35,16 @@ function Prod({ onAdd, onRemove }) {
             <div className="row">
                 <div className="col-12">
                     <div className="card">
+                       
 
-                     {data.map((key,index)=>{
-                        // console.log(key.value);
-                        return(
-                            <div className="data" key={index}>
-                                <h2>key: {key}  </h2>
-                                <hr />
-                            </div>
-                        )
-                     })
-                     }
+                       {
+                        data.category.map((item , index)=>{
+                            return(
+                                <h1>{item.name}</h1>
+                            )
+                        })
+                       }
+                  
                     </div>
                 </div>
             </div>
